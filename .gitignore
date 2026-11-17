@@ -1,0 +1,23 @@
+# Keil MDK-ARM build outputs & temporary files
+MDK-ARM/*.uvguix.*
+MDK-ARM/*.uvoptx
+MDK-ARM/Objects/
+MDK-ARM/Listings/
+MDK-ARM/DebugConfig/
+MDK-ARM/RTE/
+*.o
+*.d
+*.crf
+*.axf
+*.hex
+*.bin
+*.htm
+*.lnp
+*.map
+*.sct
+*.dep
+*.build_log.htm
+
+# CubeMX backup files
+*.ioc.bak
+mx.scratch
