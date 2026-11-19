@@ -7,8 +7,8 @@
 // #define TEST_CASE_UART
 // #define TEST_CASE_IMU
 // #define TEST_CASE_VBAT_ADC
-#define TEST_CASE_MOTOR_PWM
-// #define TEST_CASE_SDCARD
+// #define TEST_CASE_MOTOR_PWM
+#define TEST_CASE_SDCARD
 // #define TEST_CASE_FDCAN
 
 void Run_Test_Blink_Led(void);
