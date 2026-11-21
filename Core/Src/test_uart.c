@@ -13,7 +13,7 @@ int fputc(int ch, FILE *f) {
 void Run_Test_Uart(void) {
     uint32_t counter = 0;
 
-    printf("[OK] STM32H743 FC Bringup - UART1 Ready!\r\n");
+    printf("UART1 Ready!\r\n");
 
     while (1) {
         printf(" Tick: %lu | LED Toggle\r\n", counter++);

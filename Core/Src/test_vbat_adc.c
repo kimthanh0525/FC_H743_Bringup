@@ -24,18 +24,18 @@ static uint16_t Read_Vbat_Raw_Avg(uint8_t samples) {
 }
 
 void Run_Test_Vbat_Adc(void) {
-    printf("\r\n--- TEST ADC VBAT (PC1 - ADC1_IN11) ---\r\n");
+    printf("TEST ADC VBAT (PC1 - ADC1_IN11)\r\n");
 
     // ADC1 calibration for offset cancellation 
     if (HAL_ADCEx_Calibration_Start(&hadc1, ADC_CALIB_OFFSET, ADC_SINGLE_ENDED) != HAL_OK) {
-        printf("[FAIL] Loi hieu chuan ADC1!\r\n");
+        printf("ADC1 CALIBRATION ERROR!\r\n");
         while (1) {
             HAL_GPIO_TogglePin(GPIOE, GPIO_PIN_4);
             HAL_Delay(150);
         }
     }
 
-    printf("[OK] ADC1 Calibration thanh cong! Bat dau do VBAT...\r\n");
+    printf("ADC1 CALIBRATION SUCCEEDED! START MEASURING VBAT\r\n");
 
     while (1) {
         uint16_t raw = Read_Vbat_Raw_Avg(16);

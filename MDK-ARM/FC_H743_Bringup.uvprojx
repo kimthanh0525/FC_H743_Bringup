@@ -418,6 +418,11 @@
               <FilePath>..\Core\Src\test_pwm.c</FilePath>
             </File>
             <File>
+              <FileName>test_sdcard.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\test_sdcard.c</FilePath>
+            </File>
+            <File>
               <FileName>main.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Core/Src/main.c</FilePath>
@@ -718,9 +723,9 @@
               <FilePath>../Core/Src/stm32h7xx_hal_msp.c</FilePath>
             </File>
             <File>
-              <FileName>test_sdcard.c</FileName>
+              <FileName>test_fdcan.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\Core\Src\test_sdcard.c</FilePath>
+              <FilePath>..\Core\Src\test_fdcan.c</FilePath>
             </File>
           </Files>
         </Group>

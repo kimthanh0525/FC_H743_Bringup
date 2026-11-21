@@ -16,7 +16,7 @@ static void Set_Motor_PWM(uint16_t m1, uint16_t m2, uint16_t m3, uint16_t m4) {
 }
 
 void Run_Test_Motor_Pwm(void) {
-    printf("\r\n--- TEST PWM OUTPUT (50Hz: 1000us - 2000us) ---\r\n");
+    printf("TEST PWM OUTPUT (50Hz: 1000us - 2000us)\r\n");
 
     HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_1);
     HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_2);

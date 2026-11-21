@@ -42,7 +42,7 @@ void Run_Test_Imu(void) {
     HAL_Delay(50);
 
     uint8_t who_am_i = ICM42688_ReadReg(ICM42688_REG_WHO_AM_I);
-    printf("\r\n--- TEST IMU ICM-42688-P ---\r\n");
+    printf("TEST IMU ICM-42688-P\r\n");
     printf("WHO_AM_I = 0x%02X (Expected: 0x47)\r\n", who_am_i);
 
     if (who_am_i != ICM42688_WHO_AM_I_VAL) {
